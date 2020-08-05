@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="box" id="heading">
+    <h1><%= whichDay %> Todo List</h1>
+  </div>
+  <div class="box">
+  <%  NewItem.forEach(function(item){ %>
+    <form action="/delete" method="post">
+      <div class="item">
+        <input type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()">
+        <p> <%= item.name %> </p>
+      </div>
+      <input type="hidden" name="listName" value="<%= whichDay %>" ></input>
+    </form>
+  <% }) %>
+
+    <form class="item" action="/" method="post">
+      <input type="text" name="newlist" placeholder="Enter your New Todo" autofocus="true" autocomplete="off">
+      <button type="submit" name="submit" value="<%= whichDay %>">+</button>
+    </form>
+
+  </div>
+
+  <footer>
+    Copyright © 2020 Pakkeer Mydeen
+  </footer>
+
+</body>
+
+</html>
