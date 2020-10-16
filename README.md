@@ -1,10 +1,11 @@
-<h1 align = "center">TodoList WebApp<h1>
+#TodoList WebApp
 
-This is my first webapp. This app helps to maintain my daily Todo list
+This is my first webapp. This app helps to maintain my daily Todo list.
   
-<h1>If you want to create your own todolist for yourself ?<h1>
+Follow the below steps to make use of this app for your personal use.
 
-Enter your name after the "/" in the below link to create a new todolist for your daily use.
+Step 1 : copy this link https://tranquil-dusk-04515.herokuapp.com/
 
-https://tranquil-dusk-04515.herokuapp.com/
+Step 2:  Enter your nickname after the "/" in the above link to create a new todolist for your daily use.
 
+If you have any further doubts feel free to contact me ..
